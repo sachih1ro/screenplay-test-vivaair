@@ -46,24 +46,24 @@ public class ChooseCheapestTicket implements Task {
                 JavaScriptClick.on(PRICES_LIST.resolveAllFor(actor)
                         .get(getRealMinPrice(PRICES_LIST.resolveAllFor(actor))[1])),
 
-                WaitUntil.the(A_LA_CARTA_OPTION, WebElementStateMatchers.isClickable()),
-                Scroll.to(A_LA_CARTA_OPTION),
+                WaitUntil.the(MIN_PRICE_OPTION, WebElementStateMatchers.isClickable()),
+                Scroll.to(MIN_PRICE_OPTION),
 
-                Check.whether(PEOPLE_SEEN_FLIGHT_CLOSE_BUTTON
+                Check.whether(PEOPLE_LOOKING_THIS_FLIGHT_CLOSE_BUTTON
                         .resolveAllFor(actor).size() > 0)
-                        .andIfSo(JavaScriptClick.on(PEOPLE_SEEN_FLIGHT_CLOSE_BUTTON)),
+                        .andIfSo(JavaScriptClick.on(PEOPLE_LOOKING_THIS_FLIGHT_CLOSE_BUTTON)),
                 Check.whether(LAST_PURCHASE_CLOSE_BUTTON
                         .resolveAllFor(actor).size() > 0)
                         .andIfSo(JavaScriptClick.on(LAST_PURCHASE_CLOSE_BUTTON)),
 
-                JavaScriptClick.on(A_LA_CARTA_OPTION),
+                JavaScriptClick.on(MIN_PRICE_OPTION),
 
                 Scroll.to(CONTINUE_BUTTON),
                 WaitUntil.the(CONTINUE_BUTTON, WebElementStateMatchers.isClickable()),
                 Click.on(CONTINUE_BUTTON),
 
                 //Esperar carga de la siguiente página
-                WaitUntil.the(SEAT_PAGE, WebElementStateMatchers.isVisible())
+                WaitUntil.the(SEAT_PAGE, WebElementStateMatchers.isVisible()).forNoMoreThan(10).seconds()
         );
 
     }

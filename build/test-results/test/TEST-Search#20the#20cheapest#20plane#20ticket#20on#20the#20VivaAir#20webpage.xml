@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Search the cheapest plane ticket on the VivaAir webpage" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-03-27T16:22:57" hostname="CPX-CABZ5GZUN42" time="43.981">
+<testsuite name="Search the cheapest plane ticket on the VivaAir webpage" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-03-27T19:32:15" hostname="CPX-CABZ5GZUN42" time="55.559">
   <properties/>
-  <testcase name="Search the cheapest ticket for tomorrow on the Medellín-Bogotá route" classname="Search the cheapest plane ticket on the VivaAir webpage" time="43.981"/>
+  <testcase name="Search the cheapest ticket for tomorrow on the Medellín-Bogotá route" classname="Search the cheapest plane ticket on the VivaAir webpage" time="55.559"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[Mar 27, 2021 11:22:58 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+  <system-err><![CDATA[Mar 27, 2021 2:32:16 PM org.openqa.selenium.remote.DesiredCapabilities chrome
 INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --start-maximized, goog:chromeOptions: {args: [--start-maximized], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
-Starting ChromeDriver 89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}) on port 10746
+Starting ChromeDriver 89.0.4389.23 (61b08ee2c50024bab004e48d2b1b083cdbdac579-refs/branch-heads/4389@{#294}) on port 48639
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Mar 27, 2021 11:23:02 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+Mar 27, 2021 2:32:24 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
         __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
